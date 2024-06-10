@@ -11,11 +11,11 @@ body{
 
 .container{
 
-    grid-template-columns: 100px 200px 150px;/*Define el ancho de las columnas*/
-    grid-template-rows: 100px 200px 50px;/*Define el alto de cada fila*/
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr 2fr);
 
     display: grid; /*habilita el comportamiendo de Grid en el contenedor*/
-    background-color: darkcyan;
+    background-color: rgb(7, 46, 72);
     width: 500px;
     height: 500px;
     margin: 0 auto; /*esto centra el elemento cuando tiene no tiene un alto definido*/
