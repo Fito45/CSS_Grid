@@ -15,10 +15,14 @@ body{
     grid-template-rows:repeat(3, 1fr);
     background-color: rgb(7, 46, 72);
 
-    gap: 24px;/*define el espacio entre filas y columnas*/
+    gap: 24px;
 
-    /*row-gap: 50px;*//*espacio entre filas*/
-    /*column-gap: 80px;*//*espacio que define las columnas*/
+    grid-auto-flow: row;/*es el valor por defaut*/
+    /*grid-auto-flow: column;*//*cambia el flujo a columnas*/
+
+    /*no es de grid*/
+
+    direction: rtl;
 
     width: 500px;
     height: 500px;
@@ -34,7 +38,7 @@ body{
 }
 
 .item3{
-    background-color: dodgerblue;
+    background-color: rgb(30, 93, 156);
 }
 
 .item4{
@@ -43,4 +47,13 @@ body{
 
 .item5{
     background-color: royalblue;
+}
+
+.container div {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 31, 111);
 }
